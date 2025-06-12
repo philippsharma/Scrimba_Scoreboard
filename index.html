@@ -1,39 +1,46 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-        <meta charset="UTF-8">
-        <title>Scoreboard </title>
-    </head>
-    <body>
-        <div class="container">
-            <button class="btn" id="reset-btn" onclick="reset()">RESET</button>
-            <div class="flex-cont">
-                <div class="sub-cont">
-                    <h3>HOME</h3>
-                    <div class="score-display" id="home-score-display">
-                            0
-                    </div>
-                    <div class="button-cont">
-                        <button class="btn" onclick="updateScoreDisplay('home', 1)">+1</button>
-                        <button class="btn" onclick="updateScoreDisplay('home', 2)">+2</button>
-                        <button class="btn" onclick="updateScoreDisplay('home', 3)">+3</button>
-                    </div>
-                </div>
-                <div class ="sub-cont">
-                    <h3>GUEST</h3>
-                    <div class="score-display" id="guest-score-display">
-                            0
-                    </div>
-                    <div class="button-cont">
-                        <button class="btn" onclick="updateScoreDisplay('guest', 1)">+1
-                        </button>
-                        <button class="btn" onclick="updateScoreDisplay('guest', 2)">+2
-                        </button>
-                        <button class="btn" onclick="updateScoreDisplay('guest', 3)">+3</button>
-                    </div>
-                </div>
-            </div>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoreboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn" id="reset-btn" onclick="reset()">RESET</button>
+      <div class="flex-cont">
+        <div class="sub-cont">
+          <h3>HOME</h3>
+          <div class="score-display" id="home-score-display">0</div>
+          <div class="button-cont">
+            <button class="btn" onclick="updateScoreDisplay('home', 1)">
+              +1
+            </button>
+            <button class="btn" onclick="updateScoreDisplay('home', 2)">
+              +2
+            </button>
+            <button class="btn" onclick="updateScoreDisplay('home', 3)">
+              +3
+            </button>
+          </div>
         </div>
-        <script src="index.js"></script>
-    </body>
+        <div class="sub-cont">
+          <h3>GUEST</h3>
+          <div class="score-display" id="guest-score-display">0</div>
+          <div class="button-cont">
+            <button class="btn" onclick="updateScoreDisplay('guest', 1)">
+              +1
+            </button>
+            <button class="btn" onclick="updateScoreDisplay('guest', 2)">
+              +2
+            </button>
+            <button class="btn" onclick="updateScoreDisplay('guest', 3)">
+              +3
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
