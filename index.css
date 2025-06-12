@@ -77,7 +77,8 @@ body {
 @media (max-width: 530px) {
     
   .container {
-    width: 150px;
+    width: 90%;
+    max-width: 320px;
   }
   .flex-cont {
     flex-direction: column;
@@ -90,4 +91,3 @@ body {
   }
 
   }
-}
